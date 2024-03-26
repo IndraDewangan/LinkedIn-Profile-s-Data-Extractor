@@ -1,0 +1,15 @@
+{
+    "name" : "Title Selector",
+    "description" : "Current Tab Title Selector",
+    "version" : "1.0",
+    "manifest_version" : 3,
+    "icons" : {
+        "16" : "/image/title_25%.png",
+        "32" : "/image/title_50%.png",
+        "48" : "/image/title_75%.png"
+    },
+    "action" : {
+        "default_popup" : "title.html"
+    },
+    "permissions" : ["tabs"]
+} 
