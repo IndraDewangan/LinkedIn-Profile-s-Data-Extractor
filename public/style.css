@@ -1,0 +1,100 @@
+
+body{
+    background-color: rgba(247, 246, 248, 0.798);
+    width: 400px; 
+    height: 150px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+}
+input{
+    height:20px;
+    width: 370px;
+    border-radius: 5px;    
+}
+.btnDiv2{
+    margin-top: 10px;
+    text-align: center;
+} 
+
+.btn2{
+    margin-bottom: 10px;
+}
+
+
+/* part2 disabled */
+.com2{
+    display: none;
+}
+
+/* || */
+
+
+.ProfileLinks{
+    width: 350px; 
+    height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.taDiv,.btnDiv1{
+    text-align: center;
+}
+
+.com1{
+    display: block;
+}
+
+.labelDiv1{
+    margin-top: 50px;
+    text-align: center;
+    background-color: brown;
+    
+}
+
+.labelDiv2{
+    display: none;
+}
+
+.labelDiv11{
+    margin-top: 20px;
+    text-align: center;
+    background-color: brown;
+    height: 30px;
+}
+
+.labelDiv22{
+    display: none;
+}
+
+.lab1,.lab11,.lab111,.lab1111{
+    font-size: 15px;
+    font-family : cursive ;
+}
+
+.labelDiv111{
+    margin-top: 20px;
+    text-align: center;
+    background-color:aquamarine;
+    height: 30px;
+}
+
+.labelDiv222{
+    display: none;
+}
+
+.labelDiv1111{
+    margin-top: 20px;
+    text-align: center;
+    background-color:aquamarine;
+    height: 30px;
+}
+
+.labelDiv2222{
+    display: none;
+}

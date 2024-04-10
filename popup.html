@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+    background-color: rgb(247, 246, 248);
+    width: 320px; 
+    height: 230px;
+    }
+    .container2{
+        width: 300px;    
+        border-radius: 30px;
+        background-color: rgb(157, 91, 255);
+        border: 1px;
+        border-style : solid;
+        border-color: rgba(0, 0, 0, 0.483);
+        box-shadow:6px 8px 10px rgba(4, 4, 4, 0.681),inset 6px 8px 10px rgba(1, 1, 1, 0.252);
+        margin-top: 20px;
+        margin-left: 7px;
+    }
+    .label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 50px;
+    cursor: text;
+    }
+    .title1{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 50px;
+    cursor: text;
+    visibility: 20%;
+    text-align: center; 
+    }
+    .title2{
+        opacity: 50%;
+        font-size:small;
+        cursor: not-allowed;
+    }
+    #bt{
+        height: 40px;
+        width: 7opx;
+        margin-left: 75px; 
+        font-size: 15px;   
+    }
+    .button{
+        cursor: not-allowed;
+    }
+    .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(157, 91, 255);
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;    
+        color: aliceblue;
+        font-family : cursive ;
+        box-shadow: 6px 8px 10px rgba(4, 4, 4, 0.681),inset 6px 8px 10px rgba(1, 1, 1, 0.372); 
+        font-size:large;   
+    }
+    .btn:hover{
+        box-shadow: 3px 3px 3px rgb(252, 251, 252);
+        margin-bottom: 3px;
+        margin-left: 3px;
+        cursor: pointer;
+    }
+    hr{
+        margin-left: 20px;
+        margin-right: 20px;
+        border-style: solid;
+        border-color: rgb(169, 130, 228);  
+    }
+    </style>
+</head>
+<body>
+      <div class="container2">
+          <div class="label item">Enter LinkedIn Profile Links </div>
+          <hr>
+          <button id="bt" class="btn button item">click here to enter</button>
+          <hr>
+          <div class="title1 title2 item">Enter min 3 links !</div> 
+      </div> 
+       
+      <script src="./popup.js"></script>
+</body>
+</html>
