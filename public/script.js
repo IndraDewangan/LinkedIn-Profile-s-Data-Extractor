@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){
     document.querySelector(".btn2").addEventListener("click", async function(){
         linkCount++;
         linkArrayIndex++;
-        document.getElementById("mesg").textContent=`SELECT DATA FOR LINK ${linkCount}`;
+        
         var name=document.getElementById("name").value;
         var url=document.getElementById("url").value;
         var about=document.getElementById("about").value;
@@ -55,10 +55,15 @@ document.addEventListener('DOMContentLoaded',function(){
         document.getElementById("connection_count").value='';
 
         var Links2 =Links[linkArrayIndex];
-        await chrome.runtime.sendMessage({action : 'processLinks', Links : Links2});
+        if(linkCount>Links.length){
+            document.getElementById("mesg").textContent="You have traversed all links !!";
+        }else{
+            document.getElementById("mesg").textContent=`SELECT DATA FOR LINK ${linkCount}`;
+            await chrome.runtime.sendMessage({action : 'processLinks', Links : Links2});
+        }
+        
 
-        if(linkArrayIndex===Links.length-1){
-            document.querySelector(".btn2").textContent="You have traversed all links !!"
+        if(linkArrayIndex===Links.length){
             document.querySelector(".btn2").disabled=true;
         }
     });
