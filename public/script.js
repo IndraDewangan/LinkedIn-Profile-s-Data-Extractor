@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded',function(){
             }      
         });
 
-        document.querySelector(".lab1111").textContent=`You Have Entered ${count} Link/Links`;
+        document.querySelector(".lab1111").textContent=`You Have Entered ${count} LinkedIn Profile's Link`;
         document.querySelector(".labelDiv1111").classList.remove("labelDiv2222");
         setTimeout(setTimer,2000);
         function setTimer(){
@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded',function(){
         var Links2 =Links[linkArrayIndex];
         if(linkCount>Links.length){
             document.getElementById("mesg").textContent="You have traversed all links !!";
+            document.getElementById("heading").style.backgroundColor="#def0d8";
+            document.getElementById("mesg").style.color="#347838";
         }else{
             document.getElementById("mesg").textContent=`SELECT DATA FOR LINK ${linkCount}`;
             await chrome.runtime.sendMessage({action : 'processLinks', Links : Links2});
@@ -90,7 +92,7 @@ function sendProfileData(datas) {
 async function unfilteredFilteredLengthCheck(unfilteredLinks,Links){
     if(unfilteredLinks.length>Links.length){
         var diff=unfilteredLinks.length-Links.length;
-        document.querySelector(".lab1").textContent=`Your Entered ${diff} Link/Links is/are not LinkedIn Profile Link \n Please enter only LinkedIn Profile Link...!!`;
+        document.querySelector(".lab1").textContent=`Your Entered ${diff} Link is/are not LinkedIn Profile Link \n Please enter only LinkedIn Profile Link...!!`;
         document.querySelector(".labelDiv1").classList.remove("labelDiv2");
         setTimeout(setTimer,2000);
         function setTimer(){
@@ -126,10 +128,9 @@ async function openTab(Links,Links2){
 
 async function tab(Links,Links2){
     if(Links.length>=3){
-        document.querySelector(".taDiv").style.display="none";
-        document.querySelector(".btnDiv1").style.display="none";
-        document.querySelector(".container").classList.remove("com2");
-        document.querySelector(".btnDiv2").classList.remove("com2");
+        document.querySelector(".all1").style.display="none";
+        document.querySelector(".all2").style.display="none";
+        document.querySelector("#com3").classList.remove("com3");
         await chrome.runtime.sendMessage({action : 'processLinks', Links : Links2});
     }
 }

@@ -4,85 +4,93 @@
     <meta charset="UTF-8">
     <style>
         body{
-    background-color: rgb(247, 246, 248);
-    width: 320px; 
-    height: 230px;
-    }
-    .container2{
-        width: 300px;    
-        border-radius: 30px;
-        background-color: rgb(157, 91, 255);
-        border: 1px;
-        border-style : solid;
-        border-color: rgba(0, 0, 0, 0.483);
-        box-shadow:6px 8px 10px rgba(4, 4, 4, 0.681),inset 6px 8px 10px rgba(1, 1, 1, 0.252);
-        margin-top: 20px;
-        margin-left: 7px;
-    }
-    .label{
-    margin-top: 20px;
-    margin-bottom: 10px;
-    height: 50px;
-    cursor: text;
-    }
-    .title1{
-    margin-bottom: 20px;
-    margin-top: 10px;
-    height: 50px;
-    cursor: text;
-    visibility: 20%;
-    text-align: center; 
-    }
-    .title2{
-        opacity: 50%;
-        font-size:small;
-        cursor: not-allowed;
-    }
-    #bt{
-        height: 40px;
-        width: 7opx;
-        margin-left: 75px; 
-        font-size: 15px;   
-    }
-    .button{
-        cursor: not-allowed;
-    }
-    .item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(157, 91, 255);
-        border-radius: 20px;
-        margin-left: 20px;
-        margin-right: 20px;    
-        color: aliceblue;
-        font-family : cursive ;
-        box-shadow: 6px 8px 10px rgba(4, 4, 4, 0.681),inset 6px 8px 10px rgba(1, 1, 1, 0.372); 
-        font-size:large;   
-    }
-    .btn:hover{
-        box-shadow: 3px 3px 3px rgb(252, 251, 252);
-        margin-bottom: 3px;
-        margin-left: 3px;
-        cursor: pointer;
-    }
-    hr{
-        margin-left: 20px;
-        margin-right: 20px;
-        border-style: solid;
-        border-color: rgb(169, 130, 228);  
-    }
+            background-color: #edeffe;
+            width: 320px; 
+            height: 230px;
+            }
+            .container2{
+                width: 300px;    
+                border-radius: 10px;
+                background-color: #ffffff;
+                border: 1px;
+                border-style : solid;
+                border-color: transparent;
+                box-shadow: 3px 3px 3px #6b90a3;
+                margin-left: 7px;
+            }
+            .label{
+            margin-top: 20px;
+            margin-bottom: 10px;
+            height: 50px;
+            cursor: text;
+            box-shadow: 3px 3px 3px #6b90a3;
+            }
+            .title1{
+            margin-bottom: 20px;
+            margin-top: 10px;
+            height: 50px;
+            cursor: text;
+            visibility: 20%;
+            text-align: center;
+            box-shadow: 3px 3px 3px #6b90a3; 
+            }
+            .title2{
+                opacity: 50%;
+                font-size:small;
+                cursor: not-allowed;
+            }
+            #bt{
+                height: 40px;
+                width: 7opx;
+                margin-left: 85px; 
+                font-size: 12px;  
+                font-weight: normal;
+                font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                border-color: transparent;
+                background-color: #5273e7;
+                color: #ffffff;
+            }
+            .button{
+                cursor: not-allowed;
+            }
+            .item{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #e9fbfc;
+                border-radius:10px;
+                margin-left: 20px;
+                margin-right: 20px;    
+                color: #88adb8;
+                font-family : cursive ; 
+                font-size:17px;   
+                font-weight: bold;
+            }
+            .btn:hover{
+                box-shadow: 3px 3px 3px #6b90a3;
+                margin-bottom: 3px;
+                margin-left: 3px;
+                cursor: pointer;
+            }
+            hr{
+                margin-left: 20px;
+                margin-right: 20px;
+                border-style: solid;
+                border-color: #edeffe;  
+            }
+            #msg{
+                background-color: #f6f1f0;
+            }
     </style>
 </head>
 <body>
       <div class="container2">
-          <div class="label item">Enter LinkedIn Profile Links </div>
+          <div class="label item">Provide LinkedIn Profile Links </div>
           <hr>
           <button id="bt" class="btn button item">click here to enter</button>
           <hr>
-          <div class="title1 title2 item">Enter min 3 links !</div> 
-      </div> 
-       
+          <div id="msg"class="title1 title2 item">Enter min 3 links !</div> 
+      </div>       
       <script src="./popup.js"></script>
 </body>
 </html>
